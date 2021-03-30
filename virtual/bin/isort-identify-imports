@@ -1,0 +1,8 @@
+#!/mnt/2f4e3a09-7682-448e-9756-b56e2c7bfa24/git_repo/api_practice/virtual/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from isort.main import identify_imports_main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(identify_imports_main())
